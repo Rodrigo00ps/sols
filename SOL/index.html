@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorpresa Especial</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+
+        .envelope {
+            width: 300px;
+            height: 200px;
+            background-color: white;
+            border: 2px solid #000;
+            border-radius: 10px;
+            position: relative;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            background-image: url('https://example.com/tulipanes-azules.jpg'); /* Cambia por la URL de tulipanes azules que prefieras */
+            background-size: cover;
+            cursor: pointer;
+        }
+
+        .envelope .label {
+            position: absolute;
+            bottom: 10px;
+            left: 20px;
+            font-size: 20px;
+            font-weight: bold;
+            color: #fff;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+        }
+
+        .envelope .heart {
+            font-size: 30px;
+            color: red;
+        }
+
+        .card {
+            width: 90%;
+            height: 80%;
+            background-color: white;
+            border-radius: 10px;
+            position: absolute;
+            top: 10%;
+            left: 5%;
+            transform: translateY(-300px);
+            padding: 20px;
+            overflow-y: auto;
+            font-size: 16px;
+            line-height: 1.6;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            display: none;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .card.open {
+            display: block;
+            animation: openCard 1s ease-in-out forwards;
+        }
+
+        @keyframes openCard {
+            0% {
+                transform: translateY(-300px);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        .save-button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #00b0f0;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .save-button:hover {
+            background-color: #0088cc;
+        }
+
+        .photos-button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #00b0f0;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .photos-button:hover {
+            background-color: #0088cc;
+        }
+
+        .christmas-message {
+            text-align: center;
+            font-size: 16px;
+            font-weight: bold;
+            margin-top: 20px;
+            color: #333;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="envelope" onclick="openCard()">
+        <div class="label">
+            Sol <span class="heart">❤️🟰</span>
+        </div>
+    </div>
+
+    <div class="card">
+        <p>Esta carta está diseñada con el propósito de contarte cómo fueron estos dos años juntos. Estoy consciente de que fue un año agotador; tuvimos discusiones, malos entendidos, y fue un año donde pudimos conocernos en un estado no tan agradable, en el sentido de que, obviamente, era algo por lo que teníamos que pasar.</p>
+
+        <p>Pero aquí estamos, tratando de seguir. Fue un año agotador; fue un año donde aprendimos cosas de cada uno. Aprendimos que, por más discusiones que tengamos, estamos juntos en todo momento. Obviamente, también fue un proceso largo, un proceso que, en cierto sentido, no fue bueno; fue algo agotador.</p>
+
+        <p>Esta carta, más allá de contarte esto que nosotros dos sabemos, también es para festejar. Festejar, primero, un año más juntos; un año de travesías, un año más de crecimiento, un año más de estar juntos. Simplemente, festejar el estar vivos. En ciertos momentos es difícil ver esto, pero lo logramos. Estamos avanzando: tenemos nuestra propia casa; vos terminaste de estudiar un año más tu colegio, y el año que viene vienen muchos nuevos proyectos juntos.</p>
+
+        <p>Proyectos que, a mi parecer, nos van a marcar positivamente. Vamos a avanzar en muchas áreas.</p>
+
+        <p>Estoy orgulloso de la mujer que tengo. Orgulloso porque te conocí cuando te faltaban materias para terminar el secundario; te conocí luchando con tus problemas; te conocí haciendo las cosas que te gustan hacer. Te conocí.</p>
+
+        <p>Conocí muchas áreas tuyas. Conocí tu cuerpo. Me enamoré del mismo, me enamoré de lo que eres, realmente de lo que eres. Neutral. Sabes bien que yo soy lo contrario; sabes que soy una persona dramática, una persona bastante pesimista y, en cierto sentido, egoísta. Vos me cambiaste en muchos aspectos, aspectos que capaz yo no conocía. Me forzaste a ser mejor persona, pero no solo el hecho de cambiar actitudes, sino el hecho de enseñarme, aun sabiendo que soy una persona terca.</p>
+
+        <p>Tenerme la paciencia que, como dijiste vos, solo la mujer que me dio la vida me tuvo. La cercanía que necesitaba, la comodidad y seguridad.</p>
+
+        <p>Fue un año con sorpresas, viéndote crecer, viendo cómo avanzás y avanzamos juntos. Viendo cómo una mujer que apenas salía de la secundaria, hoy es una mujer con metas y un colegio por terminar.</p>
+
+        <p>Estoy orgulloso de vos, Sol. Realmente espero afrontar el año que viene mucho mejor que este año. Afrontar desafíos juntos y aprender uno del otro. Quiero que sepas que, como te dije muchas veces, tenés a alguien esperándote aquí, como siempre. Por más problemas que tengamos, siempre vas a tener un lugar donde alguien te va a estar esperando porque te ama.</p>
+
+        <p>Te amo, Sol Torres, y vamos por 2025 con progresos juntos.</p>
+
+        <button class="save-button" onclick="saveCard()">Guardar Carta</button>
+        <a href="fotos.html" target="_blank">
+            <button class="photos-button">Ingresar a las Fotos</button>
+        </a>
+    </div>
+
+    <script>
+        function openCard() {
+            document.querySelector('.card').classList.add('open');
+        }
+
+        function saveCard() {
+            const card = document.querySelector('.card');
+            card.classList.remove('open');
+            card.style.transform = 'translateY(-300px)';
+            setTimeout(() => {
+                alert('La carta ha sido guardada correctamente.');
+            }, 1000);
+        }
+    </script>
+
+</body>
+</html>
